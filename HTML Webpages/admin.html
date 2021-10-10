@@ -8,7 +8,11 @@
    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!--Bootsrap 4 CDN-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	
+	
+
     <!--Fontawesome CDN-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
@@ -46,30 +50,28 @@
 						<div class="form-group">
 							<input id="login" type="submit" value="Login" class="btn float-right login_btn">
 						</div>
-
 						<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 						<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+						
 						<script>
-							$("#login").click(function(){
+							$("#login").click(function() {
 								var user = $("#username").val();
 								var pass = $("#password").val();
 
 								if (user == '' || pass == '') {
 									swal({
-											title: "Empty field",
-											text: "Please ensure all fields are filled correctly..",
-											icon: "warning",
-											button: "Try again!",
-										});
-									}else{
+										title: "Empty fields",
+										text: "Please ensure all fields are filled...",
+										icon: "warning",
+										button: "Retry!",
+									});
+								} else {
 									swal({
-											title: "Good job!",
-											text: "Login Successful!",
-											icon: "success",
-											button: "Done!"
-										});
-									}
-								
+										title: "Welcome!",
+										text: "Successful",
+										icon: "success",
+									});
+								}
 							});
 						</script>
 					</form>
@@ -131,6 +133,7 @@
         <hr>
         <p class="copyright">Travel Buddy | Copyright ©2021 - All rights reserved</p>
     </footer>
+	
 </body>
 </html>
 
