@@ -5,16 +5,21 @@
     <title>footer</title>
     <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
     <link rel="stylesheet" href="/CSS/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <h1>@NAVIGATION</h1>
-    <nav>
-        <p>Logo</p>
-        <div class="nav-logo">
-            <img src="/icons/logo.svg">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/icons/logo.svg" width="240" height="150">
+          </a>
         </div>
-    </nav>
+        
+      </nav>
     <br>
     <hr>
 
@@ -60,14 +65,14 @@
             </div>
             <div class="col">
                 <h2>Suggestions</h2>
-                <form>
+                <form class="footer-form">
                     <i class="far fa-envelope"></i>
                     <input type="email" placeholder="Enter your email id" required>
                     
                     <button type="submit"><i class="fas fa-arrow-right"></i></button>
 
                 </form>
-                <form>
+                <form class="footer-form">
                     <input type="text" placeholder="comments">
                     <button type="submit"><i class="fas fa-arrow-right"></i></button>
                 </form>
