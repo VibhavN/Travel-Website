@@ -1,117 +1,342 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Home | Travel Buddy</title>
-    <link rel="stylesheet" href="/CSS/index.css">
-  </head>
-  <body>
-      <header class="navbar sticky-top bg-white">
-        <nav >
-            <img class="logo"  src="/icons/logo.png" alt="logo" width="220" height="140">
-           <ul class="nav_links" style="text-align: end;">
-                <li><a href="#" style="font-weight: 500,
-                    font-size: 16px,
-                    color: black;
-                    text-decoration: none;">Home</a></li>
-                <li><a href="#">Trips</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-        
-        </nav>
-        <a class="cta"  href="#"><button class="signin">Sign In</button></a> 
-      </header>
-           
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="/CSS/index.css">
+  <title>Home | Travel Buddy</title>
+</head>
 
-    <section>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<body>
+  <header> 
+    <nav class="nav-fill navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#">
+          <img src="/icons/logo.png" alt="" width="240" height="120">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item ms-5">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="#">Trips</a>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <button class="btn ms-5 btn-primary">Sign In</button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+
+  <section>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/pics/goa.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/pics/chennai.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/pics/hyderabad.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <br>
+  <hr>
+
+  <section class="content">
+    <center>
+      <h2>
+        <span style="color: red;">Travel Buddy</span> brings you a complete package to visit the beautiful cities across
+        the magnificent states of South India!
+      </h2>
+    </center>
+  </section>
+
+  <br>
+  <hr>
+
+  <section>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="/pics/karnataka-card.jpg" class="card-on-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Karnataka</h4>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/pics/tamil-nadu-card.jpg" class="card-on-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Tamil Nadu</h4>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/pics/goa-card.jpg" class="card-on-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Goa</h4>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="/pics/telangana-card.jpg" class="card-on-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Telangana</h4>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Suggestions :</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/pics/hyderabad.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/pics/goa.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="/pics/chennai.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Send
             </button>
           </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
     </section>
+    <!-- Section: Form -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Travel Buddy website is developed by a team of Full Stack Development interns.
+      </p>
+    </section>
+    <!-- Section: Text -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Section: Links -->
+    <section>
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright | Travel Buddy
+    
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
 
-    <footer>
-        <div class="row">
-            <div class="col">
-                <img src="/icons/logo-footer.svg" class="logo">
-            </div>
-            <div class="col">
-                <h2>Office</h2>
-                <p>KLEIT, Gokul Road,</p>
-                <p>Opp Airport, Hubballi,</p>
-                <p>Karnataka, PIN 580030, India.</p>
-                <p class="email-id">webdevelopers@gmail.com</p>
-                <b>+91-888440678</b>
-            </div>
-            <div class="col">
-                <h2>Links</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Trips</a></li>
-                </ul>
-            </div>
-            <div class="col">
-                <h2>Suggestions</h2>
-                <form>
-                    <i class="far fa-envelope"></i>
-                    <input type="email" placeholder="Enter your email id" required>
-                    
-                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
 
-                </form>
-                <form>
-                    <input type="text" placeholder="comments">
-                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
-                </form>
-                <div class="social-media-ic">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-whatsapp"></i>
-                    <i class="fab fa-instagram"></i>
-            </div>
-        </div>
-        <hr>
-        <p class="copyright">Travel Buddy | Copyright ©2021 - All rights reserved</p>
-    </footer>
-  </body>
+
+
+
+    
+</body>
+
 </html>
